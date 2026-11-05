@@ -86,10 +86,16 @@ export const AiChatbot = ({ onOpenOrder }) => {
     if (lower.includes('ডেমো') || lower.includes('demo') || lower.includes('পোর্টফোলিও') || lower.includes('কাজ')) {
       return {
         sender: 'bot',
-        text: `🌐 আমাদের ফ্ল্যাগশিপ ৫-নিশ D2C ই-কমার্স প্ল্যাটফর্মটি সরাসরি লাইভ ব্রাউজ করতে পারেন:
-👉 https://demo-master-124.vercel.app/
-এখানে ফ্যাশন, গ্যাজেট, বিউটি, অর্গানিক ফুড ও স্নিকার্স স্টোরের রেডি ডেমো ও ১-ক্লিক চেকআউট টেস্ট করতে পারবেন।`,
-        link: 'https://demo-master-124.vercel.app/'
+        text: `🌐 আমাদের তৈরি রিয়েল লাইভ ওয়েবসাইটগুলো সরাসরি ব্রাউজ করতে পারেন:
+
+১. SmartGhor (স্মার্ট গ্যাজেট শপ):
+👉 https://smartghor-ten.vercel.app/
+
+২. NOIR MENSWEAR (লাক্সারি মেনসওয়্যার):
+👉 https://noirmenswear-delta.vercel.app/
+
+এখানে লাইভ ১-ক্লিক ড্রয়ার চেকআউট, সাইজ চিপস ও বিকাশ পেমেন্ট ফ্লো টেস্ট করতে পারবেন।`,
+        link: 'https://smartghor-ten.vercel.app/'
       };
     }
 

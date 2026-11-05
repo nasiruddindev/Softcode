@@ -35,41 +35,59 @@ export const siteData = {
     "secondaryCtaText": "লাইভ ডেমো স্টোর দেখুন"
   },
   "featuredProject": {
-    "number": "০১ / মাস্টার ডিটুসি ই-কমার্স ফ্ল্যাগশিপ (৫টি নিশ)",
-    "title": "SoftCode Master 5-Niche D2C Commerce Engine",
-    "category": "মাল্টি-নিশ ডিটুসি ই-কমার্স আর্কিটেকচার",
-    "description": "ফ্যাশন, বিউটি, স্মার্ট গ্যাজেটস, অর্গানিক ফুড ও স্নিকার্স—প্রতিটি নিশের জন্য ১০০% কাস্টমাইজড আর্কিটেকচার, বিকাশ ও নগদ অটো মার্চেন্ট গেটওয়ে, ১-ক্লিক চেকআউট এবং সেন্ট্রাল অ্যাডমিন কন্ট্রোল সিস্টেম।",
+    "number": "০১ / ফ্ল্যাগশিপ লাইভ গ্যাজেট স্টোর",
+    "title": "SmartGhor | স্মার্ট হোম ও ইউনিক গ্যাজেট শপ",
+    "category": "স্মার্ট হোম, ওয়্যারেবল গ্যাজেটস ও ইনোভেটিভ ইলেকট্রনিক্স",
+    "description": "বাংলাদেশের সেরা উদ্ভাবনী ও ইউনিক স্মার্ট গ্যাজেটের রেডি ই-কমার্স প্ল্যাটফর্ম। বিকাশ ও নগদ অটো মার্চেন্ট গেটওয়ে, ১-ক্লিক ড্রয়ার চেকআউট, ক্যাশ অন ডেলিভারি এবং পাঠাও/স্টেডফাস্ট অটোমেটিক কুরিয়ার সিঙ্ক সমৃদ্ধ পূর্ণাঙ্গ লাইভ স্টোর।",
     "techStack": [
-      "React 19",
+      "Next.js / React",
       "Tailwind CSS",
       "Vite",
       "bKash AutoPay",
-      "Framer Motion",
+      "Steadfast Sync",
       "Vercel Edge"
     ],
-    "demoUrl": "https://demo-master-124.vercel.app/",
-    "metrics": "০.৮ সেকেন্ডে লোড • ৫টি লাইভ স্টোর • ১০০% মোবাইল রেসপনসিভ"
+    "demoUrl": "https://smartghor-ten.vercel.app/",
+    "metrics": "০.৭ সেকেন্ডে লোড • গ্যাজেট ক্যাটালগ • ১০০% মোবাইল রেসপনসিভ"
   },
   "projects": [
     {
-      "id": "master-d2c",
-      "number": "০১ — মাস্টার ৫-নিশ D2C ই-কমার্স প্ল্যাটফর্ম",
-      "title": "SoftCode Master D2C E-Commerce Engine",
-      "category": "ফ্যাশন, বিউটি, গ্যাজেটস, অর্গানিক ফুড ও স্নিকার্স",
-      "description": "বাংলাদেশের যেকোনো ধরণের প্রোডাক্টের জন্য ৫টি সম্পূর্ণ আলাদা ডিজাইনের রেডি-টু-লঞ্চ লাইভ স্টোর। সাইজ চিপস, মেগা জুম, ১-ক্লিক অর্ডার ড্রয়ার এবং মার্চেন্ট অটোমেটেড পেমেন্ট সহ সম্পূর্ণ লাইভ ডেমো।",
+      "id": "smartghor",
+      "number": "০১ — লাইভ গ্যাজেট প্ল্যাটফর্ম",
+      "title": "SmartGhor | স্মার্ট হোম ও ইউনিক গ্যাজেট শপ",
+      "category": "স্মার্ট হোম, ওয়্যারেবলস ও গ্যাজেটস",
+      "description": "স্মার্ট ওয়াচ, ওয়্যারলেস ইয়ারবাডস ও আধুনিক হোম গ্যাজেটের জন্য অপ্টিমাইজড ই-কমার্স স্টোর। ইনস্ট্যান্ট ড্রয়ার কার্ট, বিকাশ ও নগদ অটো মার্চেন্ট পেমেন্ট এবং স্টেডফাস্ট কুরিয়ার সিঙ্ক সহ লাইভ চালু সাইট।",
       "techStack": [
         "React",
         "Tailwind CSS",
         "bKash AutoPay",
         "Steadfast Courier",
-        "Central Admin"
+        "Vercel Edge"
       ],
-      "demoUrl": "https://demo-master-124.vercel.app/",
-      "image": "https://images.unsplash.com/photo-1556742049-0a67c5574f73?w=800&auto=format&fit=crop&q=80"
+      "demoUrl": "https://smartghor-ten.vercel.app/",
+      "image": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=1000&auto=format&fit=crop&q=85",
+      "keywords": ["স্মার্ট ওয়াচ", "ওয়্যারলেস ইয়ারবাডস", "হোম অটোমেশন", "০.৭ সে. স্পিড", "১-ক্লিক অর্ডার"]
+    },
+    {
+      "id": "noir-menswear",
+      "number": "০২ — প্রিমিয়াম ক্লথিং ব্র্যান্ড",
+      "title": "NOIR MENSWEAR | লাক্সারি মেনস লাইফস্টাইল ও পাঞ্জাবি",
+      "category": "ঢাকা'স প্রিমিয়াম মেন্স ফ্যাশন ও লাইফস্টাইল",
+      "description": "আধুনিক বাংলাদেশি জেন্টলম্যানদের জন্য তৈরি প্রিমিয়াম ক্লোদিং ব্র্যান্ড স্টোর। ২৪০ GSM ওভারসাইজড ড্রপ-শোল্ডার টি-শার্ট, রয়্যাল মিশরীয় কটন পাঞ্জাবি, টেক্সচার্ড পোলো ও সাইজ চিপস (S, M, L, XL, XXL) সহ আধুনিক ১-ক্লিক চেকআউট প্ল্যাটফর্ম।",
+      "techStack": [
+        "React",
+        "Tailwind CSS",
+        "Size Chips",
+        "bKash Merchant",
+        "Pathao Sync"
+      ],
+      "demoUrl": "https://noirmenswear-delta.vercel.app/",
+      "image": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=1000&auto=format&fit=crop&q=85",
+      "keywords": ["২৪০ GSM ওভারসাইজড টিজ", "রয়্যাল কটন পাঞ্জাবি", "সাইজ চিপস (S-XXL)", "১-ক্লিক চেকআউট", "লাক্সারি ডার্ক মোড"]
     },
     {
       "id": "best-responsible",
-      "number": "০২ — কর্পোরেট সিকিউরিটি ফোর্স প্ল্যাটফর্ম",
+      "number": "০৩ — কর্পোরেট সিকিউরিটি ফোর্স প্ল্যাটফর্ম",
       "title": "বেস্ট রেসপনসিবল সিকিউরিটি সার্ভিসেস লি.",
       "category": "কর্পোরেট ও ইন্ডাস্ট্রিয়াল সিকিউরিটি সলিউশন",
       "description": "৭০০+ প্রশিক্ষিত সিকিউরিটি গার্ড ম্যানেজমেন্ট পোর্টাল, লাইভ বাজেট ক্যালকুলেটর ও সরাসরি রিক্রুটমেন্ট ড্রাইভের জন্য তৈরি আন্তর্জাতিক মানের করপোরেট প্ল্যাটফর্ম।",
@@ -80,11 +98,12 @@ export const siteData = {
         "Budget Calculator"
       ],
       "demoUrl": "https://bestresonsiblegroup.com/",
-      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80"
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80",
+      "keywords": ["৭০০+ গার্ড ম্যানেজমেন্ট", "অনলাইন বাজেট রিক্রুটমেন্ট", "কর্পোরেট পোর্টাল"]
     },
     {
       "id": "link-bd",
-      "number": "০৩ — আধুনিক আইএসপি ও ব্রডব্যান্ড নেটওয়ার্ক",
+      "number": "০৪ — আধুনিক আইএসপি ও ব্রডব্যান্ড নেটওয়ার্ক",
       "title": "Link BD ISP Network",
       "category": "৮-পেজের আধুনিক আইএসপি ও বিলিং ওয়েবসাইট",
       "description": "কভারেজ এরিয়া ম্যাপ, রিয়েল-টাইম প্যাকেজ নির্বাচন, গ্রাহক সেলফ-সার্ভিস আবেদন ও হটলাইন সংযোগ সহ সম্পূর্ণ আধুনিক ব্রডব্যান্ড সার্ভিস ওয়েবসাইট।",
@@ -95,7 +114,8 @@ export const siteData = {
         "Billing Portal"
       ],
       "demoUrl": "https://linkbd.net",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80"
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
+      "keywords": ["কভারেজ ম্যাপ", "প্যাকেজ নির্বাচন", "৯৯.৯% আপটাইম"]
     }
   ],
   "services": [
