@@ -47,8 +47,9 @@ npm run build
 ## 📞 How to Customize Contact Information
 
 Open `src/data/siteData.js` and edit the contact variables:
-- `whatsappNumber`: Your WhatsApp number (e.g. `88017XXXXXXXX`)
-- `displayWhatsapp`: Display text for WhatsApp
-- `directCallNumber`: Hotline number
+- `whatsappNumber`: `8801889013446`
+- `displayWhatsapp`: `+880 1889-013446`
+- `directCallNumber`: `+8801889013446`
+- `displayCallNumber`: `01889-013446`
 - `email`: Contact email address
 - `socialLinks`: Facebook, Telegram, WhatsApp handles

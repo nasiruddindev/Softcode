@@ -43,12 +43,19 @@ export const FinalCta = ({ onOpenOrder }) => {
           </div>
 
           <div className="pt-6 border-t border-theme flex flex-wrap items-center justify-center gap-6 text-xs text-theme-secondary font-mono">
-            <span className="flex items-center gap-1.5">
+            <a href={`tel:${siteData.directCallNumber}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
               <Phone className="w-3.5 h-3.5 text-gold" />
               হটলাইন: {siteData.displayCallNumber}
-            </span>
+            </a>
             <span>•</span>
-            <span>ইমেইল: {siteData.email}</span>
+            <a href={`sms:${siteData.directCallNumber}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
+              <MessageSquare className="w-3.5 h-3.5 text-gold" />
+              SMS: {siteData.displayCallNumber}
+            </a>
+            <span>•</span>
+            <a href={`mailto:${siteData.email}`} className="hover:text-gold transition-colors">
+              ইমেইল: {siteData.email}
+            </a>
             <span>•</span>
             <span>লোকেশন: {siteData.location}</span>
           </div>

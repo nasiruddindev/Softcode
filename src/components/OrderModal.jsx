@@ -80,7 +80,7 @@ ${notes ? `• বিশেষ নোট: ${notes}\n` : ''}
               required
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="যেমন: 01700-000000"
+              placeholder="যেমন: 01889-013446"
               className="w-full px-4 py-3 rounded-xl border border-theme bg-theme-secondary text-theme-primary focus:outline-none focus:border-[var(--accent-gold)]"
             />
           </div>

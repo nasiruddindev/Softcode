@@ -1,10 +1,10 @@
 export const siteData = {
   "agencyName": "SOFTCODE",
   "agencyTagline": "বাংলাদেশি ব্র্যান্ড ও হাই-কনভার্সন ই-কমার্স ওয়েবসাইট ইঞ্জিনিয়ারিং",
-  "whatsappNumber": "8801700000000",
-  "displayWhatsapp": "+880 1700-000000",
-  "directCallNumber": "+8801700000000",
-  "displayCallNumber": "01700-000000",
+  "whatsappNumber": "8801889013446",
+  "displayWhatsapp": "+880 1889-013446",
+  "directCallNumber": "+8801889013446",
+  "displayCallNumber": "01889-013446",
   "email": "contact@softcode.com.bd",
   "telegram": "https://t.me/SoftCodeOfficial",
   "messenger": "https://m.me/SoftCodeBD",
@@ -22,8 +22,8 @@ export const siteData = {
     },
     {
       "name": "WhatsApp",
-      "url": "https://wa.me/8801700000000",
-      "handle": "+880 1700-000000"
+      "url": "https://wa.me/8801889013446",
+      "handle": "+880 1889-013446"
     }
   ],
   "hero": {

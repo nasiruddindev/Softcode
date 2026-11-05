@@ -1,6 +1,6 @@
 import React from 'react';
 import { siteData } from '../data/siteData';
-import { Phone, Mail, MapPin, Send, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, MessageCircle, MessageSquare } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -75,13 +75,19 @@ export const Footer = () => {
               <li className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-gold shrink-0" />
                 <a href={`tel:${siteData.directCallNumber}`} className="hover:text-gold">
-                  {siteData.displayCallNumber}
+                  {siteData.displayCallNumber} (Call)
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <MessageCircle className="w-3.5 h-3.5 text-gold shrink-0" />
                 <a href={`https://wa.me/${siteData.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
                   {siteData.displayWhatsapp} (WhatsApp)
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MessageSquare className="w-3.5 h-3.5 text-gold shrink-0" />
+                <a href={`sms:${siteData.directCallNumber}`} className="hover:text-gold">
+                  {siteData.displayCallNumber} (SMS)
                 </a>
               </li>
               <li className="flex items-center gap-2">
