@@ -88,14 +88,17 @@ export const AiChatbot = ({ onOpenOrder }) => {
         sender: 'bot',
         text: `🌐 আমাদের তৈরি রিয়েল লাইভ ওয়েবসাইটগুলো সরাসরি ব্রাউজ করতে পারেন:
 
-১. SmartGhor (স্মার্ট গ্যাজেট শপ):
+১. GRAIN & OVEN (বেকারি ও পিজ্জা কিচেন):
+👉 https://livebakery.vercel.app/
+
+২. SmartGhor (স্মার্ট গ্যাজেট শপ):
 👉 https://smartghor-ten.vercel.app/
 
-২. NOIR MENSWEAR (লাক্সারি মেনসওয়্যার):
+৩. NOIR MENSWEAR (লাক্সারি মেনসওয়্যার):
 👉 https://noirmenswear-delta.vercel.app/
 
 এখানে লাইভ ১-ক্লিক ড্রয়ার চেকআউট, সাইজ চিপস ও বিকাশ পেমেন্ট ফ্লো টেস্ট করতে পারবেন।`,
-        link: 'https://smartghor-ten.vercel.app/'
+        link: 'https://livebakery.vercel.app/'
       };
     }
 

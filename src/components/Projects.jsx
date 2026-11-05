@@ -3,9 +3,24 @@ import { siteData } from '../data/siteData';
 import { ExternalLink, CheckCircle2, Sparkles, ArrowUpRight } from 'lucide-react';
 
 export const Projects = () => {
-  const [activeTab, setActiveTab] = useState('all');
-
   const liveStores = [
+    {
+      id: 'livebakery',
+      tag: '🍕 ফ্রেশ পিজ্জা ও বেকারি ফ্ল্যাগশিপ',
+      category: 'Artisan Bakery, Fresh Fruit Pizza & Kitchen',
+      title: 'GRAIN & OVEN | Artisan Bakery & Pizza Kitchen',
+      url: 'https://livebakery.vercel.app/',
+      displayUrl: 'livebakery.vercel.app',
+      description: 'হট ওভেন ক্রাফটেড ফ্রেশ ফ্রুটস পিজ্জা, প্রিমিয়াম পেস্ট্রি ও বেকারি শপ। লাইভ মেনু সিলেক্টর, ১-ক্লিক ড্রয়ার চেকআউট, ক্যাশ অন ডেলিভারি ও দ্রুত ফুড ডেলিভারি ইন্টিগ্রেশন।',
+      image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&auto=format&fit=crop&q=85',
+      metrics: '🍕 লাইভ ওভেন অর্ডার • বিকাশ AutoPay • ফাস্ট ফুড ডেলিভারি সিঙ্ক',
+      keywords: ['ফ্রুটস পিজ্জা', 'আর্টিসান বেকারি', 'লাইভ কিচেন', '১-ক্লিক অনলাইন অর্ডার', 'বিকাশ AutoPay', 'ইনস্ট্যান্ট ডেলিভারি'],
+      highlights: [
+        'হট ওভেন ফ্রেশ ফ্রুটস পিজ্জা ও ডেজার্ট মেনু',
+        '১-ক্লিক মোবাইল ড্রয়ার কার্ট ও ইনস্ট্যান্ট ইনভয়েস',
+        'বিকাশ ও নগদ অটো পেমেন্ট এবং ক্যাশ অন ডেলিভারি'
+      ]
+    },
     {
       id: 'smartghor',
       tag: '🔥 গ্যাজেট শপ ফ্ল্যাগশিপ',
@@ -63,17 +78,21 @@ export const Projects = () => {
           </p>
         </div>
 
-        {/* 1. Primary Showcase Cards: SmartGhor & Noir Menswear */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          {liveStores.map((store) => (
+        {/* 3 Live Showcase Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+          {liveStores.map((store, index) => (
             <div
               key={store.id}
-              className="rounded-3xl border-2 border-[var(--accent-gold)] bg-theme-card p-5 sm:p-7 shadow-2xl transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(181,139,69,0.25)] flex flex-col justify-between group overflow-hidden relative"
+              className={`rounded-3xl border-2 bg-theme-card p-5 sm:p-6 shadow-2xl transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(181,139,69,0.25)] flex flex-col justify-between group overflow-hidden relative ${
+                index === 0
+                  ? 'border-[var(--accent-gold)] ring-1 ring-[var(--accent-gold)]'
+                  : 'border-[var(--accent-gold)]'
+              }`}
             >
-              <div className="space-y-5">
+              <div className="space-y-4">
                 
                 {/* Browser Mockup Chrome Header */}
-                <div className="px-3.5 py-2.5 bg-theme-secondary rounded-xl border border-theme flex items-center justify-between">
+                <div className="px-3 py-2 bg-theme-secondary rounded-xl border border-theme flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80 inline-block"></span>
                     <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block"></span>
@@ -84,11 +103,11 @@ export const Projects = () => {
                     href={store.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-0.5 rounded-md bg-theme-primary border border-theme text-[11px] font-mono text-theme-secondary hover:text-gold flex items-center gap-1.5 transition-colors"
+                    className="px-2.5 py-0.5 rounded-md bg-theme-primary border border-theme text-[10px] font-mono text-theme-secondary hover:text-gold flex items-center gap-1.5 transition-colors truncate max-w-[150px] sm:max-w-none"
                   >
                     <span className="text-emerald-500 font-bold">🔒</span>
-                    <span className="font-semibold text-theme-primary">{store.displayUrl}</span>
-                    <ExternalLink className="w-3 h-3 text-gold" />
+                    <span className="font-semibold text-theme-primary truncate">{store.displayUrl}</span>
+                    <ExternalLink className="w-3 h-3 text-gold shrink-0" />
                   </a>
 
                   <div className="flex items-center gap-1">
@@ -98,7 +117,7 @@ export const Projects = () => {
                 </div>
 
                 {/* Banner Image Container with Hover Effect */}
-                <div className="relative rounded-2xl overflow-hidden h-60 sm:h-72 border border-theme relative group/img">
+                <div className="relative rounded-2xl overflow-hidden h-52 sm:h-56 border border-theme relative group/img">
                   <img
                     src={store.image}
                     alt={store.title}
@@ -109,49 +128,49 @@ export const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#090F1D]/90 via-[#090F1D]/30 to-transparent opacity-80 group-hover/img:opacity-60 transition-opacity" />
 
                   {/* Top-Right Badge */}
-                  <div className="absolute top-3.5 right-3.5">
-                    <span className="px-3 py-1 rounded-full text-[10px] font-mono font-bold bg-[#090F1D]/90 text-[var(--accent-gold)] border border-[var(--accent-gold)] backdrop-blur-md shadow-md">
+                  <div className="absolute top-3 right-3">
+                    <span className="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-[#090F1D]/90 text-[var(--accent-gold)] border border-[var(--accent-gold)] backdrop-blur-md shadow-md">
                       {store.tag}
                     </span>
                   </div>
 
                   {/* Bottom Text Overlay */}
-                  <div className="absolute bottom-3.5 left-3.5 right-3.5 text-white space-y-1">
-                    <p className="text-[11px] font-mono text-slate-300 font-semibold">
+                  <div className="absolute bottom-3 left-3 right-3 text-white space-y-1">
+                    <p className="text-[10px] font-mono text-slate-300 font-semibold truncate">
                       {store.category}
                     </p>
-                    <p className="text-xs font-mono font-bold text-[var(--accent-gold)] bg-black/50 px-2.5 py-1 rounded-lg backdrop-blur-xs inline-block">
+                    <p className="text-[11px] font-mono font-bold text-[var(--accent-gold)] bg-black/60 px-2 py-0.5 rounded-md backdrop-blur-xs inline-block">
                       {store.metrics}
                     </p>
                   </div>
                 </div>
 
                 {/* Content & Details */}
-                <div className="space-y-3">
-                  <h3 className="text-xl sm:text-2xl font-black text-theme-primary">
+                <div className="space-y-2.5">
+                  <h3 className="text-lg sm:text-xl font-black text-theme-primary line-clamp-1">
                     {store.title}
                   </h3>
 
-                  <p className="text-xs text-theme-secondary leading-relaxed">
+                  <p className="text-xs text-theme-secondary leading-relaxed line-clamp-2">
                     {store.description}
                   </p>
 
                   {/* Feature Highlights */}
-                  <div className="space-y-1.5 pt-1">
+                  <div className="space-y-1 pt-1">
                     {store.highlights.map((item, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-xs text-theme-primary font-medium">
+                      <div key={idx} className="flex items-center gap-1.5 text-xs text-theme-primary font-medium">
                         <CheckCircle2 className="w-3.5 h-3.5 text-gold shrink-0" />
-                        <span>{item}</span>
+                        <span className="truncate">{item}</span>
                       </div>
                     ))}
                   </div>
 
                   {/* Keywords Pill Tags */}
-                  <div className="flex flex-wrap gap-1.5 pt-2">
-                    {store.keywords.map((kw, idx) => (
+                  <div className="flex flex-wrap gap-1 pt-1.5">
+                    {store.keywords.slice(0, 4).map((kw, idx) => (
                       <span
                         key={idx}
-                        className="text-[10px] font-mono px-2.5 py-1 rounded-md bg-theme-secondary text-theme-secondary border border-theme hover:border-[var(--accent-gold)] transition-colors"
+                        className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-theme-secondary text-theme-secondary border border-theme"
                       >
                         #{kw}
                       </span>
@@ -162,14 +181,14 @@ export const Projects = () => {
               </div>
 
               {/* Action Link Button */}
-              <div className="pt-6 mt-6 border-t border-theme">
+              <div className="pt-5 mt-5 border-t border-theme">
                 <a
                   href={store.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="gold-btn w-full py-3.5 rounded-xl text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                  className="gold-btn w-full py-3 rounded-xl text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
-                  <span>সরাসরি ওয়েবসাইট লাইভ ভিজিট করুন</span>
+                  <span>ওয়েবসাইট ভিজিট করুন</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
               </div>
