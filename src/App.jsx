@@ -17,6 +17,7 @@ import { FAQ } from './components/FAQ';
 import { FinalCta } from './components/FinalCta';
 import { Footer } from './components/Footer';
 import { AiChatbot } from './components/AiChatbot';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { OrderModal } from './components/OrderModal';
 import { siteData } from './data/siteData';
 
@@ -81,8 +82,11 @@ export function AppContent() {
       {/* Footer */}
       <Footer />
 
-      {/* Interactive AI Assistant Floating Chatbot */}
+      {/* Interactive AI Assistant Floating Chatbot (Bottom-Left) */}
       <AiChatbot onOpenOrder={handleOpenOrder} />
+
+      {/* Floating Direct WhatsApp Button (Bottom-Right) */}
+      <WhatsAppButton />
 
       {/* Quick Order Modal */}
       <OrderModal

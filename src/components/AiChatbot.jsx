@@ -116,8 +116,8 @@ export const AiChatbot = ({ onOpenOrder }) => {
 
   return (
     <>
-      {/* Floating Chatbot Launcher Button */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* Floating Chatbot Launcher Button (Bottom-Left) */}
+      <div className="fixed bottom-6 left-6 z-40">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="relative gold-btn px-4 py-3.5 sm:px-5 sm:py-4 rounded-full flex items-center gap-3 shadow-2xl cursor-pointer group"
@@ -129,14 +129,14 @@ export const AiChatbot = ({ onOpenOrder }) => {
           </span>
           <Bot className="w-5 h-5" />
           <span className="hidden sm:inline font-bold text-xs uppercase tracking-wider">
-            SoftCode AI অ্যাসিস্ট্যান্ট
+            SoftCode AI
           </span>
         </button>
       </div>
 
-      {/* Chat Drawer / Modal Window */}
+      {/* Chat Drawer / Modal Window (Anchored Bottom-Left) */}
       {isOpen && (
-        <div className="fixed bottom-24 right-4 sm:right-6 w-[94vw] sm:w-[420px] h-[550px] max-h-[80vh] z-50 rounded-3xl border-2 border-[var(--accent-gold)] bg-theme-card shadow-2xl flex flex-col overflow-hidden animate-fadeIn">
+        <div className="fixed bottom-24 left-4 sm:left-6 w-[94vw] sm:w-[420px] h-[550px] max-h-[80vh] z-50 rounded-3xl border-2 border-[var(--accent-gold)] bg-theme-card shadow-2xl flex flex-col overflow-hidden animate-fadeIn">
           
           {/* Header */}
           <div className="p-4 bg-theme-secondary border-b border-theme flex items-center justify-between">
