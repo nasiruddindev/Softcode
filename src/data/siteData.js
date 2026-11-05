@@ -84,38 +84,6 @@ export const siteData = {
       "demoUrl": "https://noirmenswear-delta.vercel.app/",
       "image": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?w=1000&auto=format&fit=crop&q=85",
       "keywords": ["২৪০ GSM ওভারসাইজড টিজ", "রয়্যাল কটন পাঞ্জাবি", "সাইজ চিপস (S-XXL)", "১-ক্লিক চেকআউট", "লাক্সারি ডার্ক মোড"]
-    },
-    {
-      "id": "best-responsible",
-      "number": "০৩ — কর্পোরেট সিকিউরিটি ফোর্স প্ল্যাটফর্ম",
-      "title": "বেস্ট রেসপনসিবল সিকিউরিটি সার্ভিসেস লি.",
-      "category": "কর্পোরেট ও ইন্ডাস্ট্রিয়াল সিকিউরিটি সলিউশন",
-      "description": "৭০০+ প্রশিক্ষিত সিকিউরিটি গার্ড ম্যানেজমেন্ট পোর্টাল, লাইভ বাজেট ক্যালকুলেটর ও সরাসরি রিক্রুটমেন্ট ড্রাইভের জন্য তৈরি আন্তর্জাতিক মানের করপোরেট প্ল্যাটফর্ম।",
-      "techStack": [
-        "React",
-        "Tailwind CSS",
-        "Vercel",
-        "Budget Calculator"
-      ],
-      "demoUrl": "https://bestresonsiblegroup.com/",
-      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80",
-      "keywords": ["৭০০+ গার্ড ম্যানেজমেন্ট", "অনলাইন বাজেট রিক্রুটমেন্ট", "কর্পোরেট পোর্টাল"]
-    },
-    {
-      "id": "link-bd",
-      "number": "০৪ — আধুনিক আইএসপি ও ব্রডব্যান্ড নেটওয়ার্ক",
-      "title": "Link BD ISP Network",
-      "category": "৮-পেজের আধুনিক আইএসপি ও বিলিং ওয়েবসাইট",
-      "description": "কভারেজ এরিয়া ম্যাপ, রিয়েল-টাইম প্যাকেজ নির্বাচন, গ্রাহক সেলফ-সার্ভিস আবেদন ও হটলাইন সংযোগ সহ সম্পূর্ণ আধুনিক ব্রডব্যান্ড সার্ভিস ওয়েবসাইট।",
-      "techStack": [
-        "Next.js",
-        "Tailwind CSS",
-        "Coverage Map",
-        "Billing Portal"
-      ],
-      "demoUrl": "https://linkbd.net",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
-      "keywords": ["কভারেজ ম্যাপ", "প্যাকেজ নির্বাচন", "৯৯.৯% আপটাইম"]
     }
   ],
   "services": [

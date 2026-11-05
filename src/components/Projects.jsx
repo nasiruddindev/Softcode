@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { siteData } from '../data/siteData';
-import { ExternalLink, CheckCircle2, Sparkles, Smartphone, ShoppingBag, ShieldCheck, Wifi, ArrowUpRight, Zap, Star } from 'lucide-react';
+import { ExternalLink, CheckCircle2, Sparkles, ArrowUpRight } from 'lucide-react';
 
 export const Projects = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -175,74 +175,6 @@ export const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* 2. Corporate & Institutional Client Projects Grid */}
-        <div className="space-y-6 pt-6">
-          <div className="text-center sm:text-left">
-            <h3 className="text-xl sm:text-2xl font-black text-theme-primary">
-              কর্পোরেট ও প্রাতিষ্ঠানিক প্রজেক্টসমূহ
-            </h3>
-            <p className="text-xs sm:text-sm text-theme-secondary">
-              সিকিউরিটি ম্যানেজমেন্ট ও ব্রডব্যান্ড নেটওয়ার্কের জন্য তৈরি কাস্টম এন্টারপ্রাইজ সিস্টেম
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {siteData.projects.slice(2).map((proj) => (
-              <div
-                key={proj.id}
-                className="rounded-3xl border border-theme bg-theme-card p-6 sm:p-7 card-hover-effect flex flex-col justify-between space-y-6"
-              >
-                <div className="space-y-4">
-                  <div className="rounded-2xl overflow-hidden border border-theme h-48 relative group">
-                    <img
-                      src={proj.image}
-                      alt={proj.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-3 right-3">
-                      <span className="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-[#090F1D]/80 text-[var(--accent-gold)] border border-[var(--accent-gold)]">
-                        {proj.category}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="text-lg font-black text-theme-primary">
-                      {proj.title}
-                    </h4>
-                    <p className="text-xs text-theme-secondary mt-1 leading-relaxed">
-                      {proj.description}
-                    </p>
-                  </div>
-
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {proj.keywords.map((kw, idx) => (
-                      <span
-                        key={idx}
-                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-theme-secondary text-theme-secondary border border-theme"
-                      >
-                        {kw}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-theme">
-                  <a
-                    href={proj.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="gold-outline-btn w-full py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-2 cursor-pointer"
-                  >
-                    <span>ওয়েবসাইট ভিজিট করুন</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>
