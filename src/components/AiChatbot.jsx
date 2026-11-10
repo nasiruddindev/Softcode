@@ -229,7 +229,7 @@ export const AiChatbot = ({ onOpenOrder }) => {
 
                   {msg.isWhatsApp && (
                     <a
-                      href={`https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent('হ্যালো SoftCode, আমি ওয়েবসাইট নিয়ে বিস্তারিত কথা বলতে চাই।')}`}
+                      href={`https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent('হ্যালো সফটকোড আমি একটি ওয়েবসাইট তৈরি করতে আগ্রহী')}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-2 inline-flex items-center gap-1.5 py-1.5 px-3 rounded-lg bg-emerald-600 text-white font-bold text-[11px] hover:bg-emerald-700"

@@ -80,13 +80,13 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <MessageCircle className="w-3.5 h-3.5 text-gold shrink-0" />
-                <a href={`https://wa.me/${siteData.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+                <a href={`https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent('হ্যালো সফটকোড আমি একটি ওয়েবসাইট তৈরি করতে আগ্রহী')}`} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
                   {siteData.displayWhatsapp} (WhatsApp)
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <MessageSquare className="w-3.5 h-3.5 text-gold shrink-0" />
-                <a href={`sms:${siteData.directCallNumber}`} className="hover:text-gold">
+                <a href={`sms:${siteData.directCallNumber}?body=${encodeURIComponent('হ্যালো সফটকোড আমি একটি ওয়েবসাইট তৈরি করতে আগ্রহী')}`} className="hover:text-gold">
                   {siteData.displayCallNumber} (SMS)
                 </a>
               </li>

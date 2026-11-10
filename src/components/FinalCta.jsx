@@ -32,7 +32,7 @@ export const FinalCta = ({ onOpenOrder }) => {
             </button>
 
             <a
-              href={`https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent('হ্যালো SoftCode, আমি ওয়েবসাইট তৈরির জন্য বিস্তারিত আলোচনা করতে চাই।')}`}
+              href={`https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent('হ্যালো সফটকোড আমি একটি ওয়েবসাইট তৈরি করতে আগ্রহী')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="gold-outline-btn w-full sm:w-auto px-7 py-4 rounded-xl text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2 cursor-pointer"
@@ -48,7 +48,7 @@ export const FinalCta = ({ onOpenOrder }) => {
               হটলাইন: {siteData.displayCallNumber}
             </a>
             <span>•</span>
-            <a href={`sms:${siteData.directCallNumber}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
+            <a href={`sms:${siteData.directCallNumber}?body=${encodeURIComponent('হ্যালো সফটকোড আমি একটি ওয়েবসাইট তৈরি করতে আগ্রহী')}`} className="flex items-center gap-1.5 hover:text-gold transition-colors">
               <MessageSquare className="w-3.5 h-3.5 text-gold" />
               SMS: {siteData.displayCallNumber}
             </a>
