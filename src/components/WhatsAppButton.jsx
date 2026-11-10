@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 
 export const WhatsAppButton = () => {
   const prefilledMessage = encodeURIComponent(
-    'হ্যালো SoftCode, আমি ওয়েবসাইট তৈরি নিয়ে বিস্তারিত আলোচনা করতে চাই।'
+    'হ্যালো SoftCode, আমি একটি ওয়েবসাইট তৈরি করতে আগ্রহী। বিস্তারিত জানাতে মেসেজ দিচ্ছি।'
   );
 
   return (
